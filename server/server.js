@@ -6,7 +6,7 @@ mongoose.connect(process.env.MONGO_URI) ;
 
 const io = require("socket.io")(3001 , {
     cors : {
-        origin : "http://localhost:3000" ,
+        origin : "https://google-docs-clone-tawny.vercel.app" ,
         methods : ["GET" , "POST"]
     }
 })
